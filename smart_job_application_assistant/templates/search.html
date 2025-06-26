@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings - CareerMa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: white;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .nav-item a {
+            color: #6c757d;
+            margin-right: 1rem;
+        }
+
+        .nav-item a:hover {
+            color: #000;
+        }
+
+        .hero-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 2rem 0;
+        }
+
+        .filter-bar {
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .filter-bar select {
+            margin-right: 0.5rem;
+        }
+
+        .filter-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            padding: 0.5rem 1rem;
+            background-color: #e9ecef;
+            border-radius: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .job-listing {
+            background-color: #e9ecef;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+
+        .job-listing h5 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-listing p {
+            margin: 0.2rem 0;
+        }
+
+        .job-listing .apply-btn {
+            background-color: #5A67D8;
+            color: white;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 0.3rem;
+        }
+
+        .job-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .job-tag {
+            padding: 0.3rem 0.8rem;
+            background-color: #dee2e6;
+            border-radius: 0.3rem;
+            font-size: 0.85rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">CareerMa</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#">Welcome</a></li>
+                    <li class="nav-item"><a href="#">Explore</a></li>
+                    <li class="nav-item"><a href="#">Post a job</a></li>
+                    <li class="nav-item"><a href="#">Search</a></li>
+                    <li class="nav-item"><button class="btn btn-dark">Sign in</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Title -->
+    <div class="container">
+        <h2 class="hero-title">Browse jobs</h2>
+    </div>
+
+    <!-- Filter and Tags -->
+    <div class="container">
+        <div class="filter-tags">
+            <span class="tag">Sales job</span>
+            <span class="tag">Marketing</span>
+            <span class="tag">Discover more job</span>
+            <span class="tag">Remote work</span>
+        </div>
+
+        <div class="filter-tags">
+            <span class="tag">Logistics</span>
+            <span class="tag">Customer support</span>
+            <span class="tag">Tech jobs</span>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <select class="form-select">
+                <option>Date posted</option>
+            </select>
+            <select class="form-select">
+                <option>Salary range</option>
+            </select>
+            <select class="form-select">
+                <option>Job type</option>
+            </select>
+            <select class="form-select">
+                <option>Experience level</option>
+            </select>
+            <select class="form-select">
+                <option>Work location</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Job Listings -->
+    <div class="container">
+        <p>Discover 3,730 job opportunities</p>
+
+        <div class="job-listing">
+            <div>
+                <h5>Sales Representative</h5>
+                <p>At Science Inc.</p>
+                <p>Full-time position with growth opportunities. Supportive work environment.</p>
+                <div class="job-tags">
+                    <span class="job-tag">Full-time</span>
+                    <span class="job-tag">Hybrid</span>
+                    <span class="job-tag">Senior level</span>
+                </div>
+            </div>
+            <a href="#" class="apply-btn">Apply now</a>
+        </div>
+
+        <div class="job-listing">
+            <div>
+                <h5>Marketing Sales Representative</h5>
+                <p>Exciting opportunity at Unicorn</p>
+                <p>Drive sales and build client relationships.</p>
+                <div class="job-tags">
+                    <span class="job-tag">Full-time</span>
+                    <span class="job-tag">On-site</span>
+                    <span class="job-tag">Entry level</span>
+                </div>
+            </div>
+            <a href="#" class="apply-btn">Apply now</a>
+        </div>
+
+        <div class="job-listing">
+            <div>
+                <h5>Remote Sales Representative</h5>
+                <p>Join Cool Finance Company</p>
+                <p>Engage with clients using strong communication skills.</p>
+                <div class="job-tags">
+                    <span class="job-tag">Full-time</span>
+                    <span class="job-tag">Remote</span>
+                    <span class="job-tag">Senior level</span>
+                </div>
+            </div>
+            <a href="#" class="apply-btn">Apply now</a>
+        </div>
+
+        <div class="job-listing">
+            <div>
+                <h5>District Sales Representative</h5>
+                <p>Opportunity at Chain of restaurants XY</p>
+                <p>Drive revenue and market share.</p>
+                <div class="job-tags">
+                    <span class="job-tag">Full-time</span>
+                    <span class="job-tag">On-site</span>
+                    <span class="job-tag">Mid level</span>
+                </div>
+            </div>
+            <a href="#" class="apply-btn">Apply now</a>
+        </div>
+
+        <div class="job-listing">
+            <div>
+                <h5>Support Sales Specialist</h5>
+                <p>Join Cute IT Company</p>
+                <p>Utilize product knowledge and customer service skills.</p>
+                <div class="job-tags">
+                    <span class="job-tag">Full-time</span>
+                    <span class="job-tag">Remote</span>
+                    <span class="job-tag">Junior level</span>
+                </div>
+            </div>
+            <a href="#" class="apply-btn">Apply now</a>
+        </div>
+
+        <div class="job-listing">
+            <div>
+                <h5>Senior Sales Representative</h5>
+                <p>Tech Company ABC opportunity</p>
+                <p>Utilize leadership and sales experience to drive business growth.</p>
+                <div class="job-tags">
+                    <span class="job-tag">Full-time</span>
+                    <span class="job-tag">Hybrid</span>
+                    <span class="job-tag">Senior level</span>
+                </div>
+            </div>
+            <a href="#" class="apply-btn">Apply now</a>
+        </div>
+        <button class="btn btn-outline-secondary w-100">Load more</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Subscribe to our job alerts and get the best offers!</p>
+        <input type="email" placeholder="

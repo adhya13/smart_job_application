@@ -1,0 +1,36 @@
+{
+  "contact_info": {
+    "email": "sarah.johnson@email.com",
+    "phone": "(555) 123-4567",
+    "linkedin": "linkedin.com/in/sarahjohnson",
+    "github": "github.com/sarahj",
+    "location": "New York"
+  },
+  "education": [
+    {
+      "degree": "sarah.johnson@email.com | (555) 123-4567 | New York, NY",
+      "institution": "Professional Resume - Sarah Johnson",
+      "graduation_date": "June 2016",
+      "gpa": null
+    }
+  ],
+  "experience": [
+    {
+      "title": "11/3/24, 10:50 PM Professional Resume - Sarah Johnson",
+      "company": "Professional Resume - Sarah Johnson",
+      "dates": [
+        "January 2021",
+        "June 2018",
+        "December 2020",
+        "May 2018",
+        "June 2016"
+      ],
+      "description": []
+    }
+  ],
+  "metadata": {
+    "filename": "test_resume.pdf",
+    "parsed_date": "2024-11-03T23:06:48.796471",
+    "parser_version": "1.0.0"
+  }
+}
